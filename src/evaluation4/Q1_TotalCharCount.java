@@ -25,9 +25,8 @@ class CharCountDemo {
         System.out.println("count vowels is: " + count);
         System.out.print("String vowels :" + str);
 
-
     }
-
+}
 
 //    public void countConsonants(String input) {
 //        for (int i = 0; i < input.length(); i++) {
@@ -42,30 +41,32 @@ class CharCountDemo {
 //           // System.out.println("count vowels is: " + count);
 //
 //        }
-    }
 
 
-public class Q1_TotalCharCount {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter String:");
-        String input=sc.nextLine();
-        CharCountDemo charCountDemo= new CharCountDemo();
-        System.out.println("Enter options 1. count token  2. count vowels 3. print consonants increment");
-        int option=sc.nextInt();
-        switch(option){
-            case 1:
-                charCountDemo.displaytokencount(input);
-                break;
-            case 2:
-                charCountDemo.countvowels(input);
-                break;
 
-            default:
-                System.out.println("enter valid option");
+    public class Q1_TotalCharCount {
+        public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Enter String:");
+            String input = sc.nextLine();
+            CharCountDemo charCountDemo = new CharCountDemo();
+            System.out.println("Enter options 1. count token  2. count vowels 3. print consonants increment");
+            int option = sc.nextInt();
+            switch (option) {
+                case 1:
+                    charCountDemo.displaytokencount(input);
+                    break;
+                case 2:
+                    charCountDemo.countvowels(input);
+                    break;
+
+                default:
+                    System.out.println("enter valid option");
+            }
         }
+
     }
-}
+
 
 /*
 * Enter String:
