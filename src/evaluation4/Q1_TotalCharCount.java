@@ -10,7 +10,6 @@ class CharCountDemo {
         System.out.println("token count is : " + stringTokenizer.countTokens());
 
     }
-
     public void countvowels(String input) {
         int count = 0;
         String str = null;
