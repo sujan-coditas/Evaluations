@@ -49,24 +49,31 @@ class CharCountDemo {
             System.out.println("Enter String:");
             String input = sc.nextLine();
             CharCountDemo charCountDemo = new CharCountDemo();
-            System.out.println("Enter options 1. count token  2. count vowels 3. print consonants increment");
-            int option = sc.nextInt();
-            switch (option) {
-                case 1:
-                    charCountDemo.displaytokencount(input);
-                    break;
-                case 2:
-                    charCountDemo.countvowels(input);
-                    break;
-                case 3:
-                    charCountDemo.countConsonants(input);
-                    break;
 
-                default:
-                    System.out.println("enter valid option");
+            boolean flag = true;
+            while (flag) {
+                System.out.println("\nEnter options \n 1. count token \n 2. count vowels \n3. print consonants increment \n 4. Exit");
+                int option = sc.nextInt();
+                switch (option) {
+                    case 1:
+                        charCountDemo.displaytokencount(input+"\n");
+                        break;
+                    case 2:
+                        charCountDemo.countvowels(input+"\n");
+                        break;
+                    case 3:
+                        charCountDemo.countConsonants(input+"\n");
+                        break;
+                    case 4:
+                         flag=false;
+                         break;
+
+                    default:
+                        System.out.println("enter valid option"+"\n");
+                }
             }
-        }
 
+        }
     }
 
 
