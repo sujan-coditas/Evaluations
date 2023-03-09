@@ -35,10 +35,75 @@ public class SIMCompany {
                     System.out.println("Enter Valid option ");
                     break;
             }
-            if(selection==1){
+            if(selection!=0){
                 System.out.println("enter 0. EXIT \n 1. Options");
-                choice= sc.nextInt();
+                selection= sc.nextInt();
             }
-        } while (selection == 0);
+        }
+        while (selection == 1);
     }
 }
+
+/*
+* Enter 0.EXIT
+ 1. Prepaid user
+ 2. New Connection
+3. View All Users
+2
+Enter name
+sujan
+Enter Email
+sujan@gmail.com
+Enter Adddress
+nanded
+Enter aadhar number
+34565677
+Enter Sim Type   1. prepaid  2. postpaid
+prepaid
+Enter name
+your mobile number is :
+0104764892
+104764892
+Enter Initial Balance
+100
+enter 0. EXIT
+ 1. Options
+1
+Enter 0.EXIT
+ 1. Prepaid user
+ 2. New Connection
+3. View All Users
+1
+ Enter option :
+ 0. Check Balance
+ 1. Recharge
+0
+Enter mobile number
+104764892
+User Doesnot Exist
+
+enter 0. EXIT
+ 1. Options
+1
+Enter 0.EXIT
+ 1. Prepaid user
+ 2. New Connection
+3. View All Users
+1
+ Enter option :
+ 0. Check Balance
+ 1. Recharge
+1
+Enter Recharge
+50
+150
+validity is : 60
+enter 0. EXIT
+ 1. Options
+1
+Enter 0.EXIT
+ 1. Prepaid user
+ 2. New Connection
+3. View All Users
+
+*/

@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class NewConnection {
    static int balance;
-   static int mobilenumber;
+   static long mobilenumber;
    static  String name;
     public void takeUserDetails(){
         Scanner sc=new Scanner(System.in);
