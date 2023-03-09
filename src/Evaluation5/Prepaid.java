@@ -28,7 +28,7 @@ public class Prepaid {
              }
     }
     public void  checkBalance(){
-        int usergeneratedNumber= mobilenumber;
+        long usergeneratedNumber= mobilenumber;
         System.out.println("Enter mobile number ");
         int number=sc.nextInt();
         if(usergeneratedNumber==number){
