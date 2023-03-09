@@ -38,9 +38,9 @@ public class NewConnection {
         }
     }
 
-    public int generateNumber(){
+    public long generateNumber(){
         Random rand = new Random();
-        int mobilenumber = rand.nextInt((int) Math.pow(10, 10));
+        long mobilenumber = rand.nextInt((int) Math.pow(10, 10));
         System.out.println(String.format("%010d", mobilenumber));
         return mobilenumber;
     }
