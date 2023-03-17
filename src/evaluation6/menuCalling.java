@@ -9,7 +9,7 @@ public class menuCalling {
         boolean exit = false;
         while (!exit) {
             Operations operations=new Operations();
-            System.out.println("Enter choice : \n 0: EXIT \n 1: Student Insertion \n 2: Student  Update \n 3: Student Retrieve \n 4: Student Delete \n 5: query 5 \n 6: Query 6 \\n 7: Query 7 ");
+            System.out.println("Enter choice : \n 0: EXIT \n 1: Student  \n 2: Teacher  \n 3: query 5 \n 4: Query 6 \n 5: Query 7 ");
             int choice = sc.nextInt();
             switch (choice) {
                 case 0:
@@ -17,32 +17,25 @@ public class menuCalling {
                     break;
 
                 case 1:
-                    operations.Studentinsert();;
+                    operations.insidermenustudent();
                     break;
 
                 case 2:
-                    operations.Studentupdate();
+                    operations.insidermenuteacher();
                     break;
 
                 case 3:
-                    operations.StudentRetrive();
-                    break;
-
-                case 4:
-                    operations.StudentDelete();
-                    break;
-
-                case 5:
                     operations.Query5();
                     break;
 
-                case 6:
+                case 4:
                     operations.Query6();
                     break;
 
-                case 7:
+                case 5:
                     operations.Query7();
                     break;
+
 
                 default:
                     System.out.println("Enter Valid Input");
