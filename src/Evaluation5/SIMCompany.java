@@ -7,7 +7,6 @@ public class SIMCompany {
         int selection = 1;
 
         Scanner sc = new Scanner(System.in);
-
         do {
             System.out.println("Enter 0.EXIT \n 1. Prepaid user \n 2. New Connection \n3. View All Users");
             int choice = sc.nextInt();
@@ -18,6 +17,7 @@ public class SIMCompany {
                 case 1:
                      Prepaid prepaid=new Prepaid();
                      prepaid.showOptions();
+
                      break;
 
                 case 2:
@@ -36,7 +36,7 @@ public class SIMCompany {
                     break;
             }
             if(selection!=0){
-                System.out.println("enter 0. EXIT \n 1. Options");
+                System.out.println("enter \n 0. EXIT \n 1. Main menu options ");
                 selection= sc.nextInt();
             }
         }
